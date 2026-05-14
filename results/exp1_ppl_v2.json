@@ -1,0 +1,204 @@
+{
+  "config": {
+    "model": "Qwen2.5-0.5B-Instruct",
+    "prompt_len": 512,
+    "target_len": 128,
+    "n_chunks": 15,
+    "ratios": [
+      1.0,
+      0.75,
+      0.5,
+      0.35,
+      0.25
+    ]
+  },
+  "results": [
+    {
+      "policy": "Full",
+      "memory_ratio_target": 1.0,
+      "memory_ratio_actual": 1.0,
+      "mean_nll": 2.6010416666666667,
+      "mean_ppl": 14.680410543256624,
+      "std_ppl": 5.648504305502968,
+      "n_chunks": 15,
+      "ppl_increment": 0.0,
+      "ppl_increment_pct": 0.0
+    },
+    {
+      "policy": "Recent",
+      "memory_ratio_target": 0.75,
+      "memory_ratio_actual": 0.751953125,
+      "mean_nll": 6.71953125,
+      "mean_ppl": 1058.5858393101994,
+      "std_ppl": 688.7885768839657,
+      "n_chunks": 15,
+      "ppl_increment": 1043.9054287669428,
+      "ppl_increment_pct": 7110.873539203955
+    },
+    {
+      "policy": "Recent",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.501953125,
+      "mean_nll": 6.597916666666666,
+      "mean_ppl": 973.1845350813629,
+      "std_ppl": 741.8594910794823,
+      "n_chunks": 15,
+      "ppl_increment": 958.5041245381063,
+      "ppl_increment_pct": 6529.137054538236
+    },
+    {
+      "policy": "Recent",
+      "memory_ratio_target": 0.35,
+      "memory_ratio_actual": 0.3515625,
+      "mean_nll": 6.628125,
+      "mean_ppl": 993.4350100264268,
+      "std_ppl": 747.5369817375623,
+      "n_chunks": 15,
+      "ppl_increment": 978.7545994831702,
+      "ppl_increment_pct": 6667.079211437696
+    },
+    {
+      "policy": "Recent",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.251953125,
+      "mean_nll": 6.601302083333334,
+      "mean_ppl": 882.85197693894,
+      "std_ppl": 586.7087113833771,
+      "n_chunks": 15,
+      "ppl_increment": 868.1715663956834,
+      "ppl_increment_pct": 5913.809861362997
+    },
+    {
+      "policy": "AttnOnly",
+      "memory_ratio_target": 0.75,
+      "memory_ratio_actual": 0.751953125,
+      "mean_nll": 2.703971354166667,
+      "mean_ppl": 16.342133304722978,
+      "std_ppl": 6.572422923209779,
+      "n_chunks": 15,
+      "ppl_increment": 1.6617227614663541,
+      "ppl_increment_pct": 11.319320781731532
+    },
+    {
+      "policy": "AttnOnly",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.501953125,
+      "mean_nll": 2.7896484375,
+      "mean_ppl": 18.140945270806238,
+      "std_ppl": 7.973246668158194,
+      "n_chunks": 15,
+      "ppl_increment": 3.4605347275496143,
+      "ppl_increment_pct": 23.572465615678535
+    },
+    {
+      "policy": "AttnOnly",
+      "memory_ratio_target": 0.35,
+      "memory_ratio_actual": 0.3515625,
+      "mean_nll": 2.8379557291666666,
+      "mean_ppl": 19.049048012548127,
+      "std_ppl": 8.394865167383008,
+      "n_chunks": 15,
+      "ppl_increment": 4.368637469291503,
+      "ppl_increment_pct": 29.7582786013993
+    },
+    {
+      "policy": "AttnOnly",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.251953125,
+      "mean_nll": 2.8658854166666665,
+      "mean_ppl": 19.614022225545128,
+      "std_ppl": 8.74112839718713,
+      "n_chunks": 15,
+      "ppl_increment": 4.933611682288504,
+      "ppl_increment_pct": 33.60676915506791
+    },
+    {
+      "policy": "FullINT8",
+      "memory_ratio_target": 0.75,
+      "memory_ratio_actual": 0.5009765625,
+      "mean_nll": 2.6051432291666665,
+      "mean_ppl": 14.727912792925313,
+      "std_ppl": 5.633473572318615,
+      "n_chunks": 15,
+      "ppl_increment": 0.04750224966868899,
+      "ppl_increment_pct": 0.32357575783538917
+    },
+    {
+      "policy": "FullINT8",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.5009765625,
+      "mean_nll": 2.6051432291666665,
+      "mean_ppl": 14.727912792925313,
+      "std_ppl": 5.633473572318615,
+      "n_chunks": 15,
+      "ppl_increment": 0.04750224966868899,
+      "ppl_increment_pct": 0.32357575783538917
+    },
+    {
+      "policy": "FullINT8",
+      "memory_ratio_target": 0.35,
+      "memory_ratio_actual": 0.3515625,
+      "mean_nll": 6.679427083333334,
+      "mean_ppl": 1042.214072397076,
+      "std_ppl": 762.7802776899679,
+      "n_chunks": 15,
+      "ppl_increment": 1027.5336618538195,
+      "ppl_increment_pct": 6999.352360249981
+    },
+    {
+      "policy": "FullINT8",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.251953125,
+      "mean_nll": 6.586197916666666,
+      "mean_ppl": 962.0003873494243,
+      "std_ppl": 751.9988811773551,
+      "n_chunks": 15,
+      "ppl_increment": 947.3199768061677,
+      "ppl_increment_pct": 6452.952892664944
+    },
+    {
+      "policy": "BM-KV-v2",
+      "memory_ratio_target": 0.75,
+      "memory_ratio_actual": 0.578125,
+      "mean_nll": 2.6666666666666665,
+      "mean_ppl": 15.501984425231703,
+      "std_ppl": 5.472559215119264,
+      "n_chunks": 15,
+      "ppl_increment": 0.8215738819750786,
+      "ppl_increment_pct": 5.596395819818981
+    },
+    {
+      "policy": "BM-KV-v2",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.5,
+      "mean_nll": 2.691145833333333,
+      "mean_ppl": 15.870212777936072,
+      "std_ppl": 5.593851754182023,
+      "n_chunks": 15,
+      "ppl_increment": 1.1898022346794477,
+      "ppl_increment_pct": 8.104693197602554
+    },
+    {
+      "policy": "BM-KV-v2",
+      "memory_ratio_target": 0.35,
+      "memory_ratio_actual": 0.34375,
+      "mean_nll": 2.753515625,
+      "mean_ppl": 16.971216366060613,
+      "std_ppl": 6.206924215464059,
+      "n_chunks": 15,
+      "ppl_increment": 2.290805822803989,
+      "ppl_increment_pct": 15.604507898835704
+    },
+    {
+      "policy": "BM-KV-v2",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.25,
+      "mean_nll": 2.786393229166667,
+      "mean_ppl": 17.622367197204007,
+      "std_ppl": 6.650722035168715,
+      "n_chunks": 15,
+      "ppl_increment": 2.9419566539473827,
+      "ppl_increment_pct": 20.04001621942893
+    }
+  ]
+}

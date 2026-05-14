@@ -1,0 +1,211 @@
+{
+  "config": {
+    "model": "Qwen2.5-0.5B-Instruct",
+    "ratios": [
+      0.5,
+      0.25
+    ],
+    "prompt_len": 512,
+    "target_len": 128,
+    "n_chunks": 8
+  },
+  "ppl_ablation": [
+    {
+      "variant": "A_full_v2",
+      "ratio": 0.5,
+      "mean_ppl": 16.512899791744932,
+      "n": 8,
+      "mem_ratio": 0.5
+    },
+    {
+      "variant": "A_full_v2",
+      "ratio": 0.25,
+      "mean_ppl": 18.761725191242114,
+      "n": 8,
+      "mem_ratio": 0.25
+    },
+    {
+      "variant": "B_no_threshold",
+      "ratio": 0.5,
+      "mean_ppl": 16.512899791744932,
+      "n": 8,
+      "mem_ratio": 0.5
+    },
+    {
+      "variant": "B_no_threshold",
+      "ratio": 0.25,
+      "mean_ppl": 18.761725191242114,
+      "n": 8,
+      "mem_ratio": 0.25
+    },
+    {
+      "variant": "C_token_level",
+      "ratio": 0.5,
+      "mean_ppl": 16.39813770958409,
+      "n": 8,
+      "mem_ratio": 0.501953125
+    },
+    {
+      "variant": "C_token_level",
+      "ratio": 0.25,
+      "mean_ppl": 18.610732906770785,
+      "n": 8,
+      "mem_ratio": 0.251953125
+    },
+    {
+      "variant": "D_no_int8",
+      "ratio": 0.5,
+      "mean_ppl": 16.730124030189444,
+      "n": 8,
+      "mem_ratio": 0.5
+    },
+    {
+      "variant": "D_no_int8",
+      "ratio": 0.25,
+      "mean_ppl": 18.832433886727838,
+      "n": 8,
+      "mem_ratio": 0.25
+    },
+    {
+      "variant": "E_v1_token_kv",
+      "ratio": 0.5,
+      "mean_ppl": 16.542783466646448,
+      "n": 8,
+      "mem_ratio": 0.501953125
+    },
+    {
+      "variant": "E_v1_token_kv",
+      "ratio": 0.25,
+      "mean_ppl": 18.44144726402381,
+      "n": 8,
+      "mem_ratio": 0.251953125
+    }
+  ],
+  "lazy_summary": [
+    {
+      "mode": "static",
+      "n_trials": 5,
+      "mean_step_ms": 46.97454571465237,
+      "mean_rebalances": 0
+    },
+    {
+      "mode": "lazy_delta16",
+      "n_trials": 5,
+      "mean_step_ms": 50.84654381036729,
+      "mean_rebalances": 6.6
+    },
+    {
+      "mode": "lazy_delta8",
+      "n_trials": 5,
+      "mean_step_ms": 53.14765428627161,
+      "mean_rebalances": 12.6
+    }
+  ],
+  "lazy_samples": [
+    {
+      "trial": 0,
+      "mode": "static",
+      "rebalances": 0,
+      "mean_step_ms": 44.594057144076075,
+      "first_text": " Johnson ; he portrayed \" Scott \" in the play \" The Last of the Mohicans \" ; he portrayed \" Scott \" in the play \" The Last of the"
+    },
+    {
+      "trial": 0,
+      "mode": "lazy_delta16",
+      "rebalances": 7,
+      "mean_step_ms": 48.20706508037383,
+      "first_text": " Johnson ; he portrayed \" Scott \" in the play \" The Last of the Mohicans \" ; he portrayed \" Scott \" in the play \" The Scarlet Letter \""
+    },
+    {
+      "trial": 0,
+      "mode": "lazy_delta8",
+      "rebalances": 9,
+      "mean_step_ms": 50.19865555518736,
+      "first_text": " Johnson ; he portrayed \" Scott \" in the play \" The Last of the Mohicans \" ; he portrayed \" Scott \" in the play \" The Scarlet Letter \""
+    },
+    {
+      "trial": 1,
+      "mode": "static",
+      "rebalances": 0,
+      "mean_step_ms": 45.207552382230965,
+      "first_text": " David Hare . In 2007 he starred in the play The Last of the Mohicans , written by John Green . In 200"
+    },
+    {
+      "trial": 1,
+      "mode": "lazy_delta16",
+      "rebalances": 10,
+      "mean_step_ms": 51.10440317574622,
+      "first_text": " David Hare . In 2007 he starred in the play The Last of the Mohicans , directed by David Hare . In 20"
+    },
+    {
+      "trial": 1,
+      "mode": "lazy_delta8",
+      "rebalances": 11,
+      "mean_step_ms": 52.43150952516035,
+      "first_text": " David Hare . In 2007 he starred in the play \" The Last of the Mohicans \" , which was performed in 200"
+    },
+    {
+      "trial": 2,
+      "mode": "static",
+      "rebalances": 0,
+      "mean_step_ms": 51.39281904640874,
+      "first_text": " his poetry , the most famous is the \" 1300 Poems of Du Fu \" , a collection of 1300 poems written by"
+    },
+    {
+      "trial": 2,
+      "mode": "lazy_delta16",
+      "rebalances": 6,
+      "mean_step_ms": 47.6323634918247,
+      "first_text": " his poetry , the most famous is the \" 1300 Poems of Du Fu \" , a collection of 1300 poems written in"
+    },
+    {
+      "trial": 2,
+      "mode": "lazy_delta8",
+      "rebalances": 8,
+      "mean_step_ms": 50.17076031718817,
+      "first_text": " his poetry , the most famous is the \" 1300 Poems of Li Bai \" , a collection of 1300 poems written by"
+    },
+    {
+      "trial": 3,
+      "mode": "static",
+      "rebalances": 0,
+      "mean_step_ms": 47.297888890459454,
+      "first_text": " the age of 14 . \n\n Du Fu 's father was a minor official , and he was also a minor official . He was a minor official in"
+    },
+    {
+      "trial": 3,
+      "mode": "lazy_delta16",
+      "rebalances": 7,
+      "mean_step_ms": 52.04041111273765,
+      "first_text": " the age of 14 . \n\n Du Fu 's father was a minor official in the capital city of Chang'an , and he was a member of the"
+    },
+    {
+      "trial": 3,
+      "mode": "lazy_delta8",
+      "rebalances": 12,
+      "mean_step_ms": 54.14972222448947,
+      "first_text": " the age of 14 . \n\n Du Fu 's father was a minor official in the court of the Tang dynasty , and his mother was a minor official"
+    },
+    {
+      "trial": 4,
+      "mode": "static",
+      "rebalances": 0,
+      "mean_step_ms": 46.380411110086634,
+      "first_text": " which he died of in 757 . \n\n In 758 , he moved to the capital again , and in 760 he was"
+    },
+    {
+      "trial": 4,
+      "mode": "lazy_delta16",
+      "rebalances": 3,
+      "mean_step_ms": 55.24847619115405,
+      "first_text": " which he died of in 757 . \n\n In 758 , he moved to the capital again , this time in an attempt to revive his"
+    },
+    {
+      "trial": 4,
+      "mode": "lazy_delta8",
+      "rebalances": 23,
+      "mean_step_ms": 58.78762380933271,
+      "first_text": " which he died of in 757. \n\nWhat is probably true about the author? \n\nA. He is a writer. \nB. He is"
+    }
+  ]
+}

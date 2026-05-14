@@ -1,0 +1,140 @@
+{
+  "config": {
+    "model": "Qwen2.5-0.5B-Instruct",
+    "prompt_len": 1024,
+    "decode_steps": 64,
+    "n_trials": 5,
+    "ratios": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "lazy_deltas": [
+      16
+    ],
+    "device": "cuda"
+  },
+  "results": [
+    {
+      "policy": "Full-static",
+      "memory_ratio_target": 1.0,
+      "memory_ratio_actual": 1.0,
+      "ttft_ms": 162.16156000155024,
+      "tpot_ms": 46.902777778727575,
+      "tpot_ms_std": 5.912054341794994,
+      "tokens_per_s": 21.58316662402773,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "Recent-static",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.5009765625,
+      "ttft_ms": 146.85051999986172,
+      "tpot_ms": 48.92416984066441,
+      "tpot_ms_std": 7.438817717400585,
+      "tokens_per_s": 20.808955042007213,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "Recent-static",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.2509765625,
+      "ttft_ms": 162.97991999890655,
+      "tpot_ms": 48.1231419039735,
+      "tpot_ms_std": 4.449433156622219,
+      "tokens_per_s": 20.928730388633,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "AttnOnly-static",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.5009765625,
+      "ttft_ms": 147.8899799985811,
+      "tpot_ms": 47.872223174532074,
+      "tpot_ms_std": 5.579174471581937,
+      "tokens_per_s": 21.114736911213342,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "AttnOnly-static",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.2509765625,
+      "ttft_ms": 153.64176000002772,
+      "tpot_ms": 50.11486634898502,
+      "tpot_ms_std": 7.367043202770118,
+      "tokens_per_s": 20.29473029516558,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "FullINT8-static",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.50048828125,
+      "ttft_ms": 179.70109999296255,
+      "tpot_ms": 50.88540222190897,
+      "tpot_ms_std": 5.110947210674214,
+      "tokens_per_s": 19.808591561234795,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "FullINT8-static",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.2509765625,
+      "ttft_ms": 175.83925999933854,
+      "tpot_ms": 49.7142419045318,
+      "tpot_ms_std": 2.554538785632724,
+      "tokens_per_s": 20.15640973937769,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "BM-KV-v2-static",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.5,
+      "ttft_ms": 191.43337999703363,
+      "tpot_ms": 47.521626666125414,
+      "tpot_ms_std": 4.895202970344693,
+      "tokens_per_s": 21.21624426584722,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "BM-KV-v2-static",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.25,
+      "ttft_ms": 197.90710000088438,
+      "tpot_ms": 49.547911112728926,
+      "tpot_ms_std": 5.708757162229234,
+      "tokens_per_s": 20.39657738399502,
+      "n_rebalances": 0,
+      "n_trials": 5
+    },
+    {
+      "policy": "BM-KV-v2-lazy16",
+      "memory_ratio_target": 0.5,
+      "memory_ratio_actual": 0.5,
+      "ttft_ms": 223.76910000457428,
+      "tpot_ms": 58.27667873005368,
+      "tpot_ms_std": 7.376987190469179,
+      "tokens_per_s": 17.364121023568753,
+      "n_rebalances": 9.4,
+      "n_trials": 5
+    },
+    {
+      "policy": "BM-KV-v2-lazy16",
+      "memory_ratio_target": 0.25,
+      "memory_ratio_actual": 0.25,
+      "ttft_ms": 224.51734001515433,
+      "tpot_ms": 58.80831714261264,
+      "tpot_ms_std": 3.1557355892367465,
+      "tokens_per_s": 17.042950271709227,
+      "n_rebalances": 7,
+      "n_trials": 5
+    }
+  ]
+}
